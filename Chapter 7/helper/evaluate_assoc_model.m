@@ -1,12 +1,13 @@
-function evaluate_assoc_model(x_test, trained_weight)
+function evaluate_assoc_model(x_test, y_test, trained_weight)
 
     %EVALUATE_MODEL function gives the evaluation result of the model
     % Parameters : 
     %  - x_test : features/prototpye matrices
+    %  - y_test : target matrices, the size same as x_test
     %  - trained_weight : trained_weight<matrices>,
     % Return : -
     
-    fprintf("--- Testing ---\n")
+    fprintf("\n --- Testing ---\n")
     [rows, ~] = size(x_test);
     positive = 0;
     negative = 0;
@@ -22,16 +23,16 @@ function evaluate_assoc_model(x_test, trained_weight)
         y_predict = a';
                 
         % compare to original target
-        if(isequal(y_predict,x_test(i,:)))
-            fprintf("Status : True\n");
+        if(isequal(y_predict,y_test(i,:)))
+            fprintf("\n Status : True\n");
             positive = positive + 1;
         else
-            fprintf("Status : False\n");
+            fprintf("\n Status : False\n");
             negative = negative + 1;
         end
     end
 
-    fprintf("\n -- Accuracy : %d percent--  \n", positive / rows * 100);
+    fprintf("\n -- Accuracy : %d %%--  \n\n", positive / rows * 100);
 
 end
 

@@ -19,6 +19,9 @@ trained_weight_delta = hebbian_rules_training(x, 'delta');
 fprintf("\n Rule : Unsupervised Hebb \n");
 trained_weight_unsupervised = hebbian_rules_training(x, 'unsupervised');
 
+fprintf("\n Rule : Pseudoinverse \n");
+trained_weight_pseudoinverse = hebbian_rules_training(x, 'pseudoinverse');
+
 
 %% Step 3 : Testing model
 fprintf("\n # Testing for X data \n");
@@ -43,6 +46,11 @@ evaluate_assoc_model(x, y_test, trained_weight_delta);
 fprintf("\n Rule : Unsupervised Hebb \n");
 evaluate_assoc_model(x, y_test, trained_weight_unsupervised);
 
+% pseudoinverse
+fprintf("\n Rule : Pseudoinverse \n");
+evaluate_assoc_model(x, y_test, trained_weight_pseudoinverse);
+
+
 
 %% Step 4 : Teting with corrupted digits, initialize digit 0, 1, 2
 fprintf("\n # Testing Corrupted \n");
@@ -64,3 +72,6 @@ evaluate_assoc_model(x_test, y_test, trained_weight_delta);
 fprintf("\n Rule : Unsupervised Hebb \n");
 evaluate_assoc_model(x_test, y_test, trained_weight_unsupervised);
 
+% pseudoinverse
+fprintf("\n Rule : Pseudoinverse \n");
+evaluate_assoc_model(x_test, y_test, trained_weight_pseudoinverse);

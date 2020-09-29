@@ -64,12 +64,22 @@ function trained_weight = hebbian_rules_training(x, rule)
             
                 % unsepervised hebb
                 w = w + learning_rate * a' * x(i,:);
+            elseif ( strcmp('pseudoinverse', rule))
+                % using pseudoinverse
+                w = x'*inv(x*x')*x; 
+             
+                break;
             end
         end
         
         % check if w = w_old
         if (w == w_old)
            break; 
+        end
+        
+        % the basic, filtered, pseudoinverse rules just need one epoch
+        if (strcmp('basic',rule) || strcmp('filtered', rule) || strcmp('pseudoinverse', rule))
+            break;
         end
         
         epoch = epoch + 1;

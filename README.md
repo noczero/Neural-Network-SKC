@@ -6,6 +6,7 @@
 
 - [Chapter 6](#chapter6)
 - [Chapter 7](#chapter7)
+- [Chapter 10](#chapter10)
 
 ---
 
@@ -19,6 +20,12 @@
 > Implement the Autoassociative Memory on page 203
 
 ---
+
+## Chapter 10
+> Noise Cancelation based on ADALINE Network. We used Psychophysics (4Mb) dataset on https://sccn.ucsd.edu/~arno/fam2data/publicly_available_EEG_data.html 
+
+---
+
 
 ## License
 

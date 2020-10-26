@@ -11,18 +11,18 @@
 ---
 
 ## Chapter 6
-> Implement the problem on page 88, 100, and 103 
+> Implement the problem on page 88, 100, and 103. 
 
 
 ---
 
 ## Chapter 7
-> Implement the Autoassociative Memory on page 203
+> Implement the Autoassociative Memory on page 203 for simple digit recognition.
 
 ---
 
 ## Chapter 10
-> Noise Cancelation based on ADALINE Network. We used Psychophysics (4Mb) dataset on https://sccn.ucsd.edu/~arno/fam2data/publicly_available_EEG_data.html 
+> Noise Cancelation based on ADALINE Network. We used Psychophysics (4Mb) dataset on https://sccn.ucsd.edu/~arno/fam2data/publicly_available_EEG_data.html.
 
 ---
 

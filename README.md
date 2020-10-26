@@ -1,5 +1,5 @@
 # Neural Network Design for EL5108:Intelligent Controls and Systems
-> The class use the Neural Network Design https://hagan.okstate.edu/NNDesign.pdf for the textbook. 
+> The class uses the Neural Network Design https://hagan.okstate.edu/NNDesign.pdf for the textbook. 
 ---
 
 ## Table of Contents
